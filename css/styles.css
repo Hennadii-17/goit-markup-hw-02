@@ -1,3 +1,4 @@
+/* Общие стили */
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
@@ -8,13 +9,14 @@ ul,
 ol {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
 }
 
-
+/* Логотип */
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -24,38 +26,39 @@ a {
     text-transform: uppercase;
 }
 
-.page-header .logo .logo-accent {
+.logo-accent {
     color: #4d5ae5;
-    
 }
 
-.page-header .logo {
+.page-header .logo-accent {
+    color: #4d5ae5;
+    /* Web */
+}
+
+.page-header .logo:not(.logo-accent) {
     color: #2e2f42;
-   
+    /* Studio */
 }
 
 .footer-logo .logo-accent {
     color: #4d5ae5;
-   
+    /* Web */
 }
 
-.footer-logo {
+.footer-logo .logo:not(.logo-accent) {
     color: #f4f4fd;
-    
+    /* Studio */
 }
 
-
-.nav-link {
+/* Навигация и контакты */
+.nav-link,
+.contact-link {
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.5px;
     color: #2e2f42;
-}
-
-.contact-link {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #434455;
 }
 
 .nav-link:hover,
@@ -65,30 +68,38 @@ a {
     color: #404bbf;
 }
 
+address {
+    font-style: normal;
+}
 
+/* Hero */
 .hero {
     background-color: #2e2f42;
     text-align: center;
+    padding: 80px 20px;
 }
 
 .hero-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 56px;
     line-height: 1.2;
+    letter-spacing: 1px;
     color: #ffffff;
+    text-align: center;
 }
 
 .hero-button {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1px;
     color: #ffffff;
     background-color: #4d5ae5;
     border: none;
+    padding: 16px 32px;
     cursor: pointer;
-
 }
 
 .hero-button:hover,
@@ -96,88 +107,108 @@ a {
     background-color: #404bbf;
 }
 
+/* Секция Features */
 .section-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 36px;
     line-height: 1.2;
-    color: #2e2f42;
+    letter-spacing: 0.5px;
     text-align: center;
+    color: #2e2f42;
+}
+
+.features-list li {
+    padding: 20px 0;
 }
 
 .features-title {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.2;
-    color: #2e2f42;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
     text-align: left;
+    color: #2e2f42;
 }
 
 .features-text {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-align: left;
     color: #434455;
+}
+
+/* Секция Team */
+.team {
+    background-color: #f4f4fd;
+    padding: 60px 20px;
 }
 
 .team-list li {
     background-color: #ffffff;
+    padding: 20px;
     text-align: center;
-    
+    margin-bottom: 10px;
+    /* небольшой отступ между карточками */
 }
 
 .team-name {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 20px;
     line-height: 1.2;
-    color: #2e2f42;
-    text-align: center;
+    letter-spacing: 0.5px;
 }
 
 .team-position {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.2;
-    color: #434455;
-    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
 }
 
+/* Секция Portfolio */
 .portfolio-list li {
     background-color: #ffffff;
-    text-align: left;
-    
+    padding: 16px;
+    margin-bottom: 10px;
 }
 
 .portfolio-title {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 20px;
     line-height: 1.2;
-    color: #2e2f42;
+    letter-spacing: 0.5px;
+    text-align: left;
 }
 
 .portfolio-text {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
-    color: #434455;
+    letter-spacing: 0.5px;
+    text-align: left;
 }
 
-
+/* Footer */
 .page-footer {
     background-color: #2e2f42;
+    padding: 40px 20px;
     text-align: center;
 }
 
 .footer-text {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.5px;
     color: #f4f4fd;
 }
